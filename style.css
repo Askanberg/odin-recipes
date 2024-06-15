@@ -1,40 +1,85 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin-bottom: 128px;
+}
+
 .universal-titles{
     font-weight: bold;
 }
 
 .title {
-    background-color: lightgreen;
+    background-color: hsl(98, 82%, 85%);
     font-size: 44px;
+    border: 5px solid black;
+    padding: 16px;
+    margin: 16px 32px;
     text-align: center;
 }
 
-.picture{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 600px;
-    height: auto;
-}
-
 #list-of-recipes {
+    margin: 16px 32px;
+    padding: 32px auto;
+    border: 3px solid black;
     font-size: 24px;
 }
 
+li{
+    margin: 0, auto;
+}
 /* recipes */
+
+.picture{
+    display: block;
+    border: 5px solid green;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    max-width: 600px;
+    height: auto;
+}
 
 .description-title {
     background-color: lightpink;
     font-size: 30;
+    max-width: 800px;
+    min-width: 600px;
+    padding:10px;
+    border: 5px solid black;
+    text-align: center;
+    margin:16 auto;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
 .small-titles{
     background-color: lightblue;
     font-size: 24px;
+    padding: 8px;
+    max-width: 800px;
+    min-width: 600px;
+    border: 5px solid black;
+    text-align: center;
     font-weight: bold;
+    margin:16 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .loose-text {
+    /* display: inline-block; */
+    padding-left: 100px;
+    max-width: 800px;
+    min-width: 590px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
+    line-height: 24px;
+    margin:0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
